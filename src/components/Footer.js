@@ -23,40 +23,44 @@ const Footer = () => {
                             <h6 className="text-[#013289] text-xl font-bold mb-4">LINKS</h6>
                             <ul className="text-md">
                                 <li className="mb-2">
-                                    <HashLink to="#hero" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Home</HashLink>
+                                    <HashLink to="#hero" className="text-[#013289] hover:text-gray-900  transition duration-250 ease-in-out">Home</HashLink>
                                 </li>
                                 <li className="mb-2">
-                                    <HashLink to="#about" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">About</HashLink>
+                                    <HashLink to="#about" className="text-[#013289] hover:text-gray-900  transition duration-250 ease-in-out">About</HashLink>
                                 </li>
                                 <li className="mb-2">
-                                    <HashLink to="#services" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Services</HashLink>
+                                    <HashLink to="#services" className="text-[#013289] hover:text-gray-900  transition duration-250 ease-in-out">Services</HashLink>
                                 </li>
                                 <li className="mb-2">
-                                    <HashLink to="#Ourteam" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Our Team</HashLink>
+                                    <HashLink to="#Ourteam" className="text-[#013289] hover:text-gray-900  transition duration-250 ease-in-out">Our Team</HashLink>
                                 </li>                            
                                 <li className="mb-2">
-                                    <HashLink to="#contact" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Contact</HashLink>
+                                    <HashLink to="#contact" className="text-[#013289] hover:text-gray-900 transition duration-250 ease-in-out">Contact</HashLink>
                                 </li>                            
                             </ul>
                         </div>
-                        {/* 3rd block */}
-                        <div className="col-span-6 md:col-span-6 lg:col-span-4 mx-auto">
-                            <h6 className="text-[#013289] text-xl font-bold mb-4">OUR SERVICES</h6>
-                            <ul className="text-md">
-                                <li className="mb-2">
-                                    <HashLink to="#services" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Telepresence Solutions</HashLink>
-                                </li>
-                                <li className="mb-2">
-                                    <HashLink to="#services" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Custom Robotics Development</HashLink>
-                                </li>
-                                <li className="mb-2">
-                                    <HashLink to="#services" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">AI-Powered Automation</HashLink>
-                                </li>
-                                <li className="mb-2">
-                                    <HashLink to="#services" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Technical Support & Maintenance</HashLink>
-                                </li>
-                            </ul>
-                        </div>
+                   {/* 3rd block: Services */}
+<div className="col-span-6 md:col-span-6 lg:col-span-4 mx-auto">
+    <h6 className="text-blue-900 text-xl font-bold mb-4">Our Services</h6>
+    <ul className="space-y-2 text-md">
+        {[
+            "Telepresence Solutions",
+            "Custom Robotics Development",
+            "AI-Powered Automation",
+            "Technical Support & Maintenance"
+        ].map((service) => (
+            <li key={service}>
+                <HashLink
+                    to="#services"
+                    className="text-blue-900 hover:text-gray-900 transition duration-250 ease-in-out"
+                >
+                    {service}
+                </HashLink>
+            </li>
+        ))}
+    </ul>
+</div>
+
                         {/* 4th block */}
                         <div className="col-span-12 text-center mx-auto lg:col-span-3 font-bold uppercase text-blue-900">
                             <div className="text-xl mb-6">
