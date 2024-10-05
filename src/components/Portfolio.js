@@ -4,16 +4,10 @@ import tbot from '../images/s1.png';
 
 const Product = () => {
   const [mainImage, setMainImage] = useState(adaptct);
-  const thumbnails = [
-    adaptct,
-    tbot,
-    adaptct,
-    tbot,
-    adaptct,
-  ];
+  const thumbnails = [adaptct, tbot, adaptct, tbot, adaptct];
 
   return (
-    <div className="flex flex-col gap-12 p-6 md:flex-row md:p-12 bg-gray-100 dark:text-black"id="products">
+    <div className="flex flex-col gap-12 p-6 md:flex-row md:p-12 bg-gray-100 dark:text-black" id="products">
       {/* Two Column Layout */}
       <div className="w-full md:w-1/2">
         {/* Adapt Content (Text Section) */}
@@ -34,8 +28,8 @@ const Product = () => {
               <img
                 key={index}
                 src={thumbnail}
-                alt={`Thumbnail ${index + 1}`}
-                className="h-16 w-16 cursor-pointer rounded-lg object-cover"
+                alt={`Product Thumbnail ${index + 1}`}
+                className="h-16 w-16 cursor-pointer rounded-lg object-cover hover:shadow-lg transition-shadow duration-200"
                 onClick={() => setMainImage(thumbnail)}
               />
             ))}
@@ -45,7 +39,7 @@ const Product = () => {
           <div className="flex justify-center items-center">
             <img
               src={mainImage}
-              alt="Main Product Image"
+              alt="Main Product Image showing tBot"
               className="w-full rounded-lg object-cover md:w-[36rem] h-auto"
             />
           </div>

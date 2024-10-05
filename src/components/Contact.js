@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import NavBar from './Navbar/NavBar';
-import Footer from './Footer';
 import { useDocTitle } from './CustomHook';
 import { init, send } from 'emailjs-com'; // Import EmailJS
 import Notiflix from 'notiflix';
@@ -59,9 +57,6 @@ const Contact = () => {
 
     return (
         <>
-            <div>
-                <NavBar />
-            </div>
             <div className="flex justify-center items-center mt-8 w-full bg-white py-12 lg:py-24" id="contact">
                 <div className="container mx-auto my-8 px-4 lg:px-20" data-aos="zoom-in">
                     <form onSubmit={sendEmail}>
