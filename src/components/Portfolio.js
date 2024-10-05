@@ -1,25 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import adaptct from '../images/adaptct.png';
 import tbot from '../images/s1.png';
-import Fade from 'react-reveal/Fade'; // Importing the Fade component
+import AOS from 'aos'; // Importing AOS
+import 'aos/dist/aos.css'; // Importing AOS styles
 
 const Product = () => {
   const [mainImage, setMainImage] = useState(adaptct);
   const thumbnails = [adaptct, tbot, adaptct, tbot, adaptct];
+
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
 
   return (
     <div className="flex flex-col gap-12 p-6 md:flex-row md:p-12 bg-gray-100 dark:text-black" id="products">
       {/* Two Column Layout */}
       <div className="w-full md:w-1/2">
         {/* Adapt Content (Text Section) */}
-        <Fade left> {/* Adding Fade animation to the text section */}
+        <div data-aos="fade-left"> {/* Adding AOS animation to the text section */}
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-blue-900 mb-6">Adapt Products</h1>
             <p className="my-3 text-xl text-gray-600 font-semibold text-justify">
               Our innovative tBot is designed to assist and guide users in various environments, providing real-time navigation and support. Built with advanced AI-driven capabilities, tBot ensures smooth and efficient operations whether it's used in corporate settings, educational institutions, or public spaces. With tBot, you can automate routine tasks, enhance user experience, and improve overall efficiency through smart navigation and guidance solutions.
             </p>
           </div>
-        </Fade>
+        </div>
       </div>
 
       <div className="w-full md:w-1/2 flex flex-col gap-4">
@@ -39,7 +44,7 @@ const Product = () => {
           </div>
 
           {/* Main Image */}
-          <Fade right> {/* Adding Fade animation to the main image section */}
+          <div data-aos="fade-right"> {/* Adding AOS animation to the main image section */}
             <div className="flex justify-center items-center">
               <img
                 src={mainImage}
@@ -47,7 +52,7 @@ const Product = () => {
                 className="w-full rounded-lg object-cover md:w-[36rem] h-auto"
               />
             </div>
-          </Fade>
+          </div>
         </div>
       </div>
     </div>
