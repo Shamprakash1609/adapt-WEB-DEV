@@ -23,7 +23,7 @@ const Intro = () => {
                         <h3 className="text-3xl text-blue-900 font-bold">About Us</h3>
                         <div>
                             <p className='my-3 text-xl text-gray-600 font-semibold text-justify'>
-                                At Adapt, we create smart, adaptable solutions for modern challenges. Our focus is on building the tbot, a telepresence robot designed to transform remote communication and collaboration.
+                                At Adapt, we create smart, adaptable solutions for modern challenges. Our focus is on building the tBot, a telepresence robot designed to transform remote communication and collaboration.
                             </p>
                         </div>
 
