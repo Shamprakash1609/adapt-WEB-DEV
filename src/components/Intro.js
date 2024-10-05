@@ -37,7 +37,7 @@ const Intro = () => {
                         ref={videoRef}
                         className="rounded-t float-right"
                         src={video}
-                        muted={true}  // Mute video for autoplay on mobile
+                        muted={false}  // Mute video for autoplay on mobile
                         autoPlay={true}  // AutoPlay is allowed on most mobile browsers if muted
                         playsInline={true} // Prevents full-screen default on iOS devices
                         preload="auto"  // Preload the video for faster loading
