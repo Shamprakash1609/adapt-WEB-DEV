@@ -17,7 +17,7 @@ const Product = () => {
       {/* Two Column Layout */}
       <div className="w-full md:w-1/2">
         {/* Adapt Content (Text Section) */}
-        <div data-aos="fade-left"> {/* Adding AOS animation to the text section */}
+        <div data-aos="zoom-in"> {/* Changed AOS animation to zoom-in */}
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-blue-900 mb-6">Adapt Products</h1>
             <p className="my-3 text-xl text-gray-600 font-semibold text-justify">
@@ -44,7 +44,7 @@ const Product = () => {
           </div>
 
           {/* Main Image */}
-          <div data-aos="fade-right"> {/* Adding AOS animation to the main image section */}
+          <div data-aos="zoom-out"> {/* Changed AOS animation to zoom-out */}
             <div className="flex justify-center items-center">
               <img
                 src={mainImage}
