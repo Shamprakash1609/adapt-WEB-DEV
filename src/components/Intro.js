@@ -3,23 +3,25 @@ import video from '../videos/animatedtbot.mp4';
 import '../intro.css';
 
 const Intro = () => {
-    // References and state
-    const videoRef = useRef(null); // Reference to the video element
-    const [isVideoEnded, setIsVideoEnded] = useState(false); // Track if the video has ended
+    const videoRef = useRef(null);
+    const [isVideoEnded, setIsVideoEnded] = useState(false); // To show play icon when video ends
+    const [isVideoPlaying, setIsVideoPlaying] = useState(false); // To check if video is playing
 
-    // Handle video end event
+    // Handle video end
     const handleVideoEnd = () => {
-        setIsVideoEnded(true); // Show play icon once the video ends
+        setIsVideoEnded(true);
+        setIsVideoPlaying(false);
     };
 
-    // Handle play button click
+    // Handle video play
     const handlePlayVideo = () => {
-        setIsVideoEnded(false); // Hide the play icon when video is playing
-        videoRef.current.play(); // Play the video
+        setIsVideoEnded(false);
+        setIsVideoPlaying(true);
+        videoRef.current.play();
     };
 
-    // Handle contact button click
-    const hasLink = () => {
+    // Handle contact section scroll
+    const scrollToContact = () => {
         const contactSection = document.getElementById('contact');
         if (contactSection) {
             contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -35,9 +37,13 @@ const Intro = () => {
                         ref={videoRef}
                         className="rounded-t float-right"
                         src={video}
-                        autoPlay
-                        loop={false}
-                        onEnded={handleVideoEnd} // Triggered when video ends
+                        muted={true}  // Mute video for autoplay on mobile
+                        autoPlay={true}  // AutoPlay is allowed on most mobile browsers if muted
+                        playsInline={true} // Prevents full-screen default on iOS devices
+                        preload="auto"  // Preload the video for faster loading
+                        loop={false}  // Play once, then show play button
+                        onEnded={handleVideoEnd}  // Handle end of the video
+                        onCanPlay={() => setIsVideoPlaying(true)}  // Ensure video starts when ready
                     />
                     {/* Play Icon Overlay */}
                     {isVideoEnded && (
@@ -47,6 +53,11 @@ const Intro = () => {
                         >
                             ▶️
                         </button>
+                    )}
+                    {!isVideoPlaying && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+                            <span>Loading...</span>
+                        </div>
                     )}
                 </div>
 
@@ -66,7 +77,7 @@ const Intro = () => {
 
                     {/* Contact Button */}
                     <button
-                        onClick={hasLink}
+                        onClick={scrollToContact}
                         className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-2 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0 group"
                     >
                         Contact us
