@@ -28,7 +28,7 @@ const Product = () => {
               <img
                 key={index}
                 src={thumbnail}
-                alt={`Product Thumbnail ${index + 1}`}
+                alt={`Product Thumbnail ${index + 1}`} // This is fine as it's descriptive
                 className="h-16 w-16 cursor-pointer rounded-lg object-cover hover:shadow-lg transition-shadow duration-200"
                 onClick={() => setMainImage(thumbnail)}
               />
@@ -39,7 +39,7 @@ const Product = () => {
           <div className="flex justify-center items-center">
             <img
               src={mainImage}
-              alt="Main Product Image showing tBot"
+              alt="tBot product" // Simplified for accessibility
               className="w-full rounded-lg object-cover md:w-[36rem] h-auto"
             />
           </div>
