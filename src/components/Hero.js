@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../components/Navbar/NavBar';
-import heroImg from '../images/tbot.jpg';
+import heroImg from '../images/tbot.jpeg';
 import '../Hero.css';
 
 const Hero = () => {
