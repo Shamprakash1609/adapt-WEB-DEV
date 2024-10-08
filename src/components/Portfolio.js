@@ -21,7 +21,7 @@ const Product = () => {
           <div className="mb-8">
             <h1 className="text-4xl font-bold text-blue-900 mb-6">Adapt Products</h1>
             <p className="my-3 text-xl text-gray-600 font-semibold text-justify">
-              Our innovative tBot is designed to assist and guide users in various environments, providing real-time navigation and support. Built with advanced AI-driven capabilities, tBot ensures smooth and efficient operations whether it's used in corporate settings, educational institutions, or public spaces. With tBot, you can automate routine tasks, enhance user experience, and improve overall efficiency through smart navigation and guidance solutions.
+              tBot is designed to assist and guide users in everyday environments, providing real-time navigation and support. Empowered with benchmarked AI, tBot ensures smooth and efficient operations whether it's used in corporate settings, educational institutions, or public spaces. tBot effortlessly aims to automate routine tasks, enhance user experience, and improve overall efficiency through smart navigation and guidance solutions.
             </p>
           </div>
         </div>

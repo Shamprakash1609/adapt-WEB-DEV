@@ -5,6 +5,8 @@ import shajahan from '../images/shajahan.jpg';
 import sangeetha from '../images/sangeetha.jpg';
 import subhiksha from '../images/Subhiksha.jpg';
 import harini from '../images/harini.jpg';
+import avatar from '../images/avatar.webp';
+import samaustin from '../images/Sam Austin.png';
 import AOS from 'aos'; // Importing AOS
 import 'aos/dist/aos.css'; // Importing AOS styles
 
@@ -12,28 +14,35 @@ const teamMembers = [
   {
     id: 1,
     image: shajahan,
-    name: "Simon Jacob A",
+    name: "Shahjahan",
     profession: "",
-    linkedin: "https://www.linkedin.com/in/simonjacob",
+    linkedin: "https://www.linkedin.com/in/sahajahanmb",
   },
   {
     id: 2,
-    image: shajahan,
-    name: "Shahjahan M",
+    image: samaustin,
+    name: "Sam Austin",
     profession: "",
-    linkedin: "https://www.linkedin.com/in/sahajahanm",
+    linkedin: "https://www.linkedin.com/in/sam-austin-0401b2100/",
   },
   {
     id: 3,
     image: simonimg,
-    name: "Simon Jacob A",
+    name: "Simon Jacob",
     profession: "",
     linkedin: "https://www.linkedin.com/in/simonjacobcs26/",
   },
   {
     id: 4,
+    image: avatar,
+    name: "Shamprakash",
+    profession: "",
+    linkedin: "https://www.linkedin.com/in/shamprakash-r-51616b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    id: 4,
     image: subhiksha,
-    name: "Subhiksha",
+    name: "Subhiksha Keerthi",
     profession: "",
     linkedin: "https://www.linkedin.com/in/subhiksha",
   },
@@ -47,7 +56,7 @@ const teamMembers = [
   {
     id: 6,
     image: harini,
-    name: "Harini S",
+    name: "Harini",
     profession: "",
     linkedin: "https://www.linkedin.com/in/harinis",
   },
@@ -63,8 +72,7 @@ const Team = () => {
       <div className="mb-16 flex w-full flex-col items-center justify-center text-center md:mb-32">
         <h2 className="mb-6 text-3xl font-bold">Our Team</h2>
         <p className="w-full sm:w-1/2">
-          We're fueled by a passion for our work and a belief in making a positive impact. Let our team's dedication and drive accelerate your success.
-        </p>
+        Driven by ambition, to reach impossible quality, that's our team, that's Adapt.        </p>
       </div>
 
       <div className="flex flex-col md:ml-12 md:flex-row">

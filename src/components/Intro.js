@@ -75,13 +75,13 @@ const Intro = () => {
                     <h3 className="text-3xl text-blue-900 font-bold">About Us</h3>
                     <div>
                         <p className="my-3 text-xl text-gray-600 font-semibold text-justify">
-                            At Adapt, we create smart, adaptable solutions for modern challenges. Our focus is on building the tBot, a telepresence robot designed to transform remote communication and collaboration.
+                            At Adapt, we create smart, adaptable solutions for modern challenges. Currently, our prime focus is on building the tBot, a telepresence robot designed to transform remote communication and collaboration.
                         </p>
                     </div>
 
                     <div>
                         <p className="my-3 text-xl text-gray-600 font-semibold text-justify">
-                            With tbot, users can navigate spaces, interact in real time, and accomplish tasks from anywhere. At Adapt, innovation meets simplicity to bring you the future of remote connectivity.
+                            With tbot, users can navigate spaces, interact in real time from anywhere. Fusing innovation with simplicity to bring you the future of remote connectivity.
                         </p>
                     </div>
 
