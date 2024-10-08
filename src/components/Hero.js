@@ -25,7 +25,7 @@ const Hero = () => {
                                 Welcome to Adapt - Revolutionizing the Future with tBot
                             </h1>
                             <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">
-                                At Adapt, we deliver the future with tBot—a fast, reliable solution to optimize your business operations with precision.
+                            Meet tBot, your smart companion for seamless navigation, offering personalized guidance, multilingual support, and valuable insights to enhance visitor experiences. 
                             </div>
                             <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                                 {/* Change Link to button and use hasLink function */}

@@ -36,8 +36,7 @@ const Services = () => {
                                 <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img2} />
                                     <h2 className="font-semibold my-4 text-2xl text-center">Custom Robotics Development</h2>
                                     <p className="text-md font-medium">
-                                    We provide tailored robotic solutions to meet unique business needs, customizing tbot for specific environments and applications.
-                                    </p>
+                                    Custom robotics development delivers tailored robotic systems for specific needs, encompassing design, prototyping, integration, and ongoing support to enhance efficiency and user experiences.                                     </p>
                                 </div>
                             </div>
 
@@ -75,7 +74,7 @@ const Services = () => {
                             font-bold">We <span className='font-black'>Build</span></h3>
                             <div>
                                 <p className='my-3 text-xl text-gray-600 font-semibold text-justify'>
-                                At Adapt, we are driven by the pursuit of new and creative solutions to everyday challenges. While we may be venturing into new territories like AI-powered automation and robotics, our commitment to learning and evolving ensures we stay at the forefront of cutting-edge technology. Our goal is to integrate innovative solutions into industries and processes, enabling a smarter and more efficient future.</p>
+                                We create intelligent systems like tBot to simplify and enhance visitor experiences. Combining real-time navigation, interactive communication, and data-driven insights, tBot ensures every interaction is efficient and meaningful, transforming how users engage with institutions.                                </p>
                             </div>
                         </div>
                         <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
@@ -84,7 +83,9 @@ const Services = () => {
                             </div>
                             <h3 className="text-3xl  text-blue-900 font-bold">We <span className='font-black'>Collaborate</span></h3>
                             <div>
-                                <p className='my-3 text-xl text-gray-600 font-semibold text-justify'>Our team can work alongside your existing infrastructure or provide entirely new, tailored solutions—whether it’s building telepresence systems, automating processes, or developing custom robotics for your unique business needs. Adapt specializes in simplifying complex challenges with scalable, high-tech solutions that improve efficiency and effectiveness.</p>
+                                <p className='my-3 text-xl text-gray-600 font-semibold text-justify'>
+                                Collaboration drives tBot’s innovation. By working closely with institutions, we tailor tBot’s capabilities to meet specific needs, ensuring personalized navigation, seamless communication, and continuous improvement. Together, we create smarter, more engaging experiences for visitors.
+                                </p>
                             </div>
                         </div>
                     </div>

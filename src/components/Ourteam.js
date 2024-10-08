@@ -19,7 +19,7 @@ const teamMembers = [
   {
     id: 2,
     image: shajahan,
-    name: "Sahajahan M",
+    name: "Shahjahan M",
     profession: "",
     linkedin: "https://www.linkedin.com/in/sahajahanm",
   },
