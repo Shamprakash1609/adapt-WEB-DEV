@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
-import { useDocTitle } from './CustomHook';
 import { init, send } from 'emailjs-com'; // Import EmailJS
 import Notiflix from 'notiflix';
 
 const Contact = () => {
-    useDocTitle('Contact Us'); // Set document title
+    const EMAILJS_USER_ID = 'HZMs0pW8myF66tTD7'; // Replace with your actual public key
+    init(EMAILJS_USER_ID); // Initialize EmailJS with the public key
+
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
     const [errors, setErrors] = useState([]);
-
-    // Initialize EmailJS
-    init(process.env.REACT_APP_EMAILJS_USER_ID);
 
     const clearErrors = () => {
         setErrors([]);
@@ -40,7 +38,8 @@ const Contact = () => {
             message: message,
         };
 
-        send(process.env.REACT_APP_EMAILJS_SERVICE_ID, 'template_rr4iwuu', templateParams)
+        // Use your service ID and template ID
+        send('service_1i9qvsh', 'template_rr4iwuu', templateParams)
             .then((response) => {
                 document.getElementById('submitBtn').disabled = false;
                 document.getElementById('submitBtn').innerHTML = 'Send Message';
@@ -132,37 +131,32 @@ const Contact = () => {
                             </div>
                         </div>
                     </form>
-                        <div
-                            className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-blue-900 rounded-2xl">
-                            <div className="flex flex-col text-white">
-                                
-                                <div className="flex my-4 w-2/3 lg:w-3/4">
-                                    <div className="flex flex-col">
-                                        <i className="fas fa-map-marker-alt pt-2 pr-2" />
-                                    </div>
-                                    <div className="flex flex-col">
-                                        <h2 className="text-2xl">Office Address</h2>
-                                        <p className="text-gray-400">H-Block, SRI SAIRAM ENGINEERING COLLEGE, Campus, Sai Leo Nagar, West Tambaram, Chennai, Sirukalathur, Tamil Nadu 600044</p>
+                    <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-blue-900 rounded-2xl">
+                        <div className="flex flex-col text-white">
+                            <div className="flex my-4 w-2/3 lg:w-3/4">
+                                <div className="flex flex-col">
+                                    <i className="fas fa-map-marker-alt pt-2 pr-2" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <h2 className="text-2xl">Office Address</h2>
+                                    <p className="text-gray-400">H-Block, SRI SAIRAM ENGINEERING COLLEGE, Campus, Sai Leo Nagar, West Tambaram, Chennai, Sirukalathur, Tamil Nadu 600044</p>
+                                </div>
+                            </div>
+
+                            <div className="flex my-4 w-2/3 lg:w-1/2">
+                                <div className="flex flex-col">
+                                    <i className="fas fa-phone-alt pt-2 pr-2" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <h2 className="text-2xl">Call Us</h2>
+                                    <p className="text-gray-400">Tel: +91 72002 80982</p>
+                                    <div className="mt-5">
+                                        <h2 className="text-2xl">Send an E-mail</h2>
+                                        <p className="text-gray-400">sanctuaryadapt@gmail.com</p>
                                     </div>
                                 </div>
-                    
-                    <div className="flex my-4 w-2/3 lg:w-1/2">
-                        <div className="flex flex-col">
-                        <i className="fas fa-phone-alt pt-2 pr-2" />
-                        </div>
-
-                        <div className="flex flex-col">
-                        <h2 className="text-2xl">Call Us</h2>
-                        <p className="text-gray-400">Tel: +91 72002 80982</p>
-                        
-                            <div className='mt-5'>
-                                <h2 className="text-2xl">Send an E-mail</h2>
-                                <p className="text-gray-400">sanctuaryadapt@gmail.com</p>
                             </div>
-                       
-                        </div>
-                    </div>
-                    <div className="flex my-4 w-2/3 lg:w-1/2">
+                            <div className="flex my-4 w-2/3 lg:w-1/2">
                         <a href="https://www.linkedin.com/company/sanctuaryadapt/" target="_blank" rel="noreferrer" className="rounded-full flex justify-center bg-white h-8 text-blue-900 w-8 mx-1 text-center pt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-current font-black hover:animate-pulse'>
                                 <circle cx="4.983" cy="5.009" r="2.188"></circle>
@@ -180,15 +174,12 @@ const Contact = () => {
                             </svg>
                         </a>
                     </div>
+                        </div>
                     </div>
                 </div>
-                </div>
             </div>
-    
         </>
-
-
-    )
-}
+    );
+};
 
 export default Contact;
