@@ -3,7 +3,7 @@ import { init, send } from 'emailjs-com'; // Import EmailJS
 import Notiflix from 'notiflix';
 
 const Contact = () => {
-    const EMAILJS_USER_ID = 'HZMs0pW8myF66tTD7'; // Replace with your actual public key
+    const EMAILJS_USER_ID = '143YZ8yy3TUWpFx5W'; // Replace with your actual public key
     init(EMAILJS_USER_ID); // Initialize EmailJS with the public key
 
     const [firstName, setFirstName] = useState('');
@@ -39,7 +39,7 @@ const Contact = () => {
         };
 
         // Use your service ID and template ID
-        send('service_1i9qvsh', 'template_rr4iwuu', templateParams)
+        send('service_5nyg70u', 'template_fieflyb', templateParams)
             .then((response) => {
                 document.getElementById('submitBtn').disabled = false;
                 document.getElementById('submitBtn').innerHTML = 'Send Message';
@@ -100,7 +100,7 @@ const Contact = () => {
                                     />
                                     {errors && <p className="text-red-500 text-sm">{errors.email}</p>}
                                 </div>
-                                <div>
+                                {/* <div>
                                     <input
                                         name="phone_number"
                                         className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
@@ -111,7 +111,7 @@ const Contact = () => {
                                         onKeyUp={clearErrors}
                                     />
                                     {errors && <p className="text-red-500 text-sm">{errors.phone_number}</p>}
-                                </div>
+                                </div> */}
                             </div>
                             <div className="my-4">
                                 <textarea
