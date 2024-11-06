@@ -5,7 +5,7 @@ import shajahan from '../images/shajahan.jpg';
 import sangeetha from '../images/sangeetha.jpg';
 import subhiksha from '../images/Subhiksha.jpg';
 import harini from '../images/harini.jpg';
-import avatar from '../images/avatar.webp';
+// import avatar from '../images/avatar.webp';
 import samaustin from '../images/Sam Austin.png';
 import Sham from'../images/ShamPrakash.jpeg';
 import AOS from 'aos'; // Importing AOS
