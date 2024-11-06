@@ -7,6 +7,7 @@ import subhiksha from '../images/Subhiksha.jpg';
 import harini from '../images/harini.jpg';
 import avatar from '../images/avatar.webp';
 import samaustin from '../images/Sam Austin.png';
+import Sham from'../images/ShamPrakash.jpeg';
 import AOS from 'aos'; // Importing AOS
 import 'aos/dist/aos.css'; // Importing AOS styles
 
@@ -34,7 +35,7 @@ const teamMembers = [
   },
   {
     id: 4,
-    image: avatar,
+    image: Sham,
     name: "Shamprakash",
     profession: "",
     linkedin: "https://www.linkedin.com/in/shamprakash-r-51616b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
