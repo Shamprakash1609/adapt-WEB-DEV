@@ -7,7 +7,8 @@ import subhiksha from '../images/Subhiksha.jpg';
 import harini from '../images/harini.jpg';
 // import avatar from '../images/avatar.webp';
 import samaustin from '../images/Sam Austin.png';
-import Sham from'../images/ShamPrakash.jpeg';
+// import Sham from'../images/ShamPrakash.jpeg';
+import sham from '../images/Sham_profile.jpeg';
 import AOS from 'aos'; // Importing AOS
 import 'aos/dist/aos.css'; // Importing AOS styles
 
@@ -35,7 +36,7 @@ const teamMembers = [
   },
   {
     id: 4,
-    image: Sham,
+    image: sham,
     name: "Shamprakash",
     profession: "",
     linkedin: "https://www.linkedin.com/in/shamprakash-r-51616b256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -73,14 +74,14 @@ const Team = () => {
       <div className="mb-16 flex w-full flex-col items-center justify-center text-center md:mb-32">
         <h2 className="mb-6 text-3xl font-bold">Our Team</h2>
         <p className="w-full sm:w-1/2">
-        Driven by ambition, to reach impossible quality, that's our team, that's Adapt.        </p>
+          Driven by ambition, to reach impossible quality, that's our team, that's Adapt.        </p>
       </div>
 
       <div className="flex flex-col md:ml-12 md:flex-row">
         {teamMembers.map((member, index) => (
-          <div 
-            key={member.id} 
-            className="group relative mb-6 flex justify-start rounded-full border-4 border-white transition-all duration-300 ease-in-out hover:-translate-x-20 md:mb-0 md:-ml-12 md:justify-center md:hover:-translate-x-0 md:hover:-translate-y-6 xl:border-8" 
+          <div
+            key={member.id}
+            className="group relative mb-6 flex justify-start rounded-full border-4 border-white transition-all duration-300 ease-in-out hover:-translate-x-20 md:mb-0 md:-ml-12 md:justify-center md:hover:-translate-x-0 md:hover:-translate-y-6 xl:border-8"
             data-aos="fade-up" // Adding AOS animation
             data-aos-delay={index * 100} // Delay based on index
           >
