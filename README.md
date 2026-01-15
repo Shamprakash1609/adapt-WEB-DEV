@@ -8,13 +8,13 @@ Check out the live website here: [https://adapt-web-dev.vercel.app](https://adap
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/home_v2.png)
 
 ### ⚙️ Features Section
-![Features](screenshots/middle.png)
+![Features](screenshots/middle_v2.png)
 
 ### 📧 Footer & Contact
-![Footer](screenshots/footer.png)
+![Footer](screenshots/footer_v2.png)
 
 ## ✨ Features
 
