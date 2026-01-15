@@ -2,6 +2,9 @@
 
 Welcome to **Adapt**! 🌟 This project is a modern web application for Adapt Robotics, featuring the incredible **tBot**. Built with React and TailwindCSS, it delivers a sleek and responsive user experience.
 
+## 🚀 Live Demo
+Check out the live website here: [https://adapt-web-dev.vercel.app](https://adapt-web-dev.vercel.app) 🌐
+
 ## 📸 Screenshots
 
 ### 🏠 Home Page
@@ -23,8 +26,8 @@ Welcome to **Adapt**! 🌟 This project is a modern web application for Adapt Ro
 
 1.  **Clone the repository** 🖥️
     ```bash
-    git clone <repository-url>
-    cd Adapt
+    git clone https://github.com/Shamprakash1609/adapt-WEB-DEV.git
+    cd adapt-WEB-DEV
     ```
 
 2.  **Install dependencies** 📦
